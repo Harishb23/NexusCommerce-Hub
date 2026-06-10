@@ -1,0 +1,21 @@
+# .NET
+**/bin/
+**/obj/
+**/out/
+**/*.user
+**/.vs/
+**/TestResults/
+**/logs/
+
+# Node
+**/node_modules/
+**/dist/
+**/.env.local
+**/.env.*.local
+
+# Docker
+.env
+
+# OS
+.DS_Store
+Thumbs.db
