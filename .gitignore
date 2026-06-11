@@ -1,21 +1,69 @@
-# .NET
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# ─── .NET / ASP.NET Core ──────────────────────────────────────────────────────
 **/bin/
 **/obj/
 **/out/
-**/*.user
-**/.vs/
-**/TestResults/
-**/logs/
+**/publish/
+**/artifacts/
 
-# Node
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+**/packages/
+project.lock.json
+project.fragment.lock.json
+
+# Logs
+**/logs/
+*.log
+*.log.*
+
+# App secrets / local config
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+
+# Test results
+**/TestResults/
+**/coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+# ─── Node / React / Vite ──────────────────────────────────────────────────────
 **/node_modules/
 **/dist/
-**/.env.local
-**/.env.*.local
+**/dist-ssr/
+**/.vite/
+**/.cache/
 
-# Docker
+# Env files
 .env
+.env.local
+.env.*.local
 
-# OS
-.DS_Store
-Thumbs.db
+# ─── Docker ───────────────────────────────────────────────────────────────────
+docker-compose.override.yml
+docker-compose.local.yml
+.docker/
+
+# ─── Misc ─────────────────────────────────────────────────────────────────────
+*.bak
+*.tmp
+*.swp
+*.orig
